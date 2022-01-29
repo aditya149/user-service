@@ -4,10 +4,7 @@ import com.cytrogene.user.service.entity.User;
 import com.cytrogene.user.service.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.PostConstruct;
 
@@ -27,5 +24,10 @@ public class UserController {
     @PostMapping("/")
     public User saveUser(@RequestBody User user){ //It doesn't work without request body
         return userService.saveUser(user);
+    }
+
+    @GetMapping("/{userId}")
+    public User getDepartment(@PathVariable Long userId){
+        return userService.getUser(userId);
     }
 }
