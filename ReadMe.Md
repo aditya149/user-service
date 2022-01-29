@@ -5,6 +5,11 @@ Tech :
 	2. H2.
 	3. Lombok
 	4. JPA
+	5. Eureka Client
+
+Implementation for adding to service registery:
+    Added Eureka Client as dependency and also dependency management with spring-cloud version
+    Added annontation enable eureka client
 	
 	This uses h2 to store data .
 	Hits request to Department service to get Department  while fetching user.
