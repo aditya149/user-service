@@ -1,4 +1,4 @@
-1. Branch : basic-h2
+1. Base Branch : basic-h2
 This is basic H2 implementation ,
 Tech : 
 	1. Spring Boot / web .
